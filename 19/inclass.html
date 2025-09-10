@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .tab-container{
+            display: inline-block;
+            width: 400px;
+
+
+        }
+
+        .tabs{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .tab{
+            padding: 10px;
+            cursor: pointer;
+            background-color: aqua;
+            border: 1px solid ;
+        }
+
+        .tab.active{
+            background-color: red;
+            
+        }
+
+        .tab-content{
+            border: 1px solid;
+            padding: 20px;
+            background-color: wheat;
+            margin-top: 10px;
+            display: none;
+        }
+
+        .tab-content.active{
+            display: block;
+        }
+
+
+        /* navbar */
+
+        .navbar{
+            display: flex;
+            background-color: black;
+            padding: 10px;
+        }
+        .nav-link{
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            
+        }
+        .nav-link:hover{
+            background-color: rgb(47, 49, 47);
+        }
+
+        .nav-link.active{
+            background-color: rgb(127, 178, 255);
+            color: black;
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#" class="nav-link active" onclick="setActive(this)">Home</a>
+        <a href="#" class="nav-link" onclick="setActive(this)">About</a>
+        <a href="#" class="nav-link" onclick="setActive(this)">Services</a>
+        <a href="#" class="nav-link" onclick="setActive(this)">Contact</a>
+    </div>
+    
+<br>
+    <div class="tab-container">
+        <div class="tabs">
+            <div class="tab active" onclick="showTab(0)">tab-1</div>
+            <div class="tab" onclick="showTab(1)">tab-2</div>
+            <div class="tab" onclick="showTab(2)">tab-3</div>
+        </div>
+
+        <div class="tab-content active">this is tab 1</div>
+        <div class="tab-content">this is tab 2</div>
+        <div class="tab-content">this is tab 3</div>
+    </div>
+
+
+
+    <script>
+        function showTab(index){
+            const tabElements = document.querySelectorAll(".tab");
+            const contentElements = document.querySelectorAll(".tab-content");
+
+            tabElements.forEach(tab => tab.classList.remove("active"));
+            contentElements.forEach(content => content.classList.remove("active"));
+
+
+            tabElements[index].classList.add("active");
+            contentElements[index].classList.add("active");
+
+        }
+    
+
+        function setActive(clickedlink){
+            const links = document.querySelectorAll(".nav-link");
+            links.forEach(link => link.classList.remove("active"));
+            clickedlink.classList.add("active");
+        }
+    </script>
+</body>
+</html>

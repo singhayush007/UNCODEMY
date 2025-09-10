@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>List Types</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      justify-content: center;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .container {
+      display: flex;
+      gap: 15px;
+    }
+
+    .box {
+      background-color: #fff;
+      width: 300px;
+      border-radius: 10px;
+      height: 50vh;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      border-bottom: 2px solid #ffc107;
+    }
+
+    .header {
+      padding: 15px;
+      font-weight: bold;
+      font-size: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    .ordered .header {
+      background-color: #f44336;
+    } 
+
+    
+    .unordered .header {
+      background-color: #ffc107;
+    }
+
+    .description .header {
+      background-color: #2196f3;
+    }
+
+    ol, ul {
+      padding: 18px;
+      margin: 0;
+    }
+
+    ol li {
+      margin-bottom: 10px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .custom-list ul {
+      list-style-type: disc;
+    }
+
+    .custom-list .sublist {
+      list-style-type: circle;
+      border-top: 1px solid #ffc107;
+      border-bottom: 1px solid #ffc107;
+      background-color: #e0e0e0;
+    }
+
+
+    dl {
+       padding: 5px; 
+       margin: 5px;
+    }
+
+    dt {
+      color: red;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    dd {
+      margin:10px 0 0 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Ordered List -->
+    <div class="box ordered">
+      <div class="header">Ordered List</div>
+      <ol>
+        <li>Information Gathering</li>
+        <li style="background-color: #e0e0e0; padding: 5px; border-radius: 4px;">Planning</li>
+        <li>Design</li>
+        <li style="background-color: #e0e0e0; padding: 5px; border-radius: 4px;">Development</li>
+        <li>Testing & Deployment</li>
+        <li style="background-color: #e0e0e0; padding: 5px; border-radius: 4px;">Maintenance</li>
+      </ol>
+    </div>
+
+    <!-- Unordered List -->
+    <div class="box unordered">
+      <div class="header">Unordered List</div>
+      <div class="custom-list">
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+        <ul class="sublist">
+          <li style="background-color: #e0e0e0; padding: 5px; border-radius: 4px;">SQL</li>
+          <li style="background-color: #e0e0e0; padding: 5px; border-radius: 4px;">PHP</li>
+        </ul>
+        <ul>
+          <li>JavaScript</li>
+          <li>Python</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Description List -->
+    <div class="box description">
+      <div class="header">Description List</div>
+      <dl>
+        <dt>HTML</dt>
+        <dd>HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page.</dd>
+
+        <dt>CSS</dt>
+        <dd>CSS is the acronym of “Cascading Style Sheets”. CSS is the language use to style an HTML document. CSS describes how HTML elements should be displayed.</dd>
+
+        <dt>PHP</dt>
+        <dd>PHP is an acronym for "PHP: Hypertext Preprocessor". PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</dd>
+      </dl>
+    </div>
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+h1{
+    text-align: center;
+    gap: 10px;
+    padding: 100px;
+    white-space: nowrap;
+}
+.container {
+    width: 80vw;
+    height: 100vh;
+    max-width: 450px;
+    background-color: white;
+    padding: 0px 20px ;
+    position: relative;
+}
+
+.game {
+    width: 100%;
+    height: 45%;
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: 33% 33% 33%;
+    gap: 5px;
+}
+
+.boxes{
+    background-color: transparent;
+    box-shadow: 2px 5px 10px rgba(0 , 0 , 0 , 0.8), -2px -5px 10px rgba(0 , 0 , 0 , 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    border: none;
+}
+
+.boxes:hover {
+    box-shadow: 2px 5px 10px rgba(0 , 0 , 0 , 0.8);
+    cursor: pointer;
+}
+
+.turn {
+    width: 50%;
+    height: 10%;
+    box-shadow: 2px 5px 10px rgba(0 , 0 , 0 , 0.8), -2px -5px 10px rgba(0 , 0 , 0 , 0.8);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+}
+
+.player{
+    width: 20%;
+    height: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.player1 , .player2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+
+.player1 {
+    color: blue;
+}
+
+.player2 {
+    color: red;
+}
+
+.player1.active {
+    color: #fff;
+    background-color: blue;
+    box-shadow: 2px 5px 10px rgba(0 , 0 , 0 , 0.8), -2px -5px 10px rgba(0 , 0 , 0 , 0.8);
+}
+
+.player2.active {
+    color: #fff;
+    background-color: red;
+    box-shadow: 2px 5px 10px rgba(0 , 0 , 0 , 0.8), -2px -5px 10px rgba(0 , 0 , 0 , 0.8);
+}
+
+.message{
+    width: 90%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #000;
+    font-weight: bold;
+    gap: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+
+#restart{
+    right: 20px;
+}
+
+
+.btn {
+    position: absolute;
+    bottom: 10vh;
+    gap: 50px;
+    display: flex;
+    cursor: pointer;;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #000;
+    box-shadow: 2px 5px 10px rgba(0 , 0 , 0 , 0.8), -2px -5px 10px rgba(0 , 0 , 0 , 0.8);
+}
+

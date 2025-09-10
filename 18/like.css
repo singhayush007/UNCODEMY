@@ -1,0 +1,40 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fffce6;
+}
+
+.container {
+  text-align: center;
+  border: 2px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+img {
+  width: 400px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.actions {
+  margin-top: 15px;
+  font-size: 24px;
+}
+
+#heartBtn {
+  cursor: pointer;
+  font-size: 28px;
+  color: #999;
+  transition: 0.3s;
+}
+
+#heartBtn.liked {
+  color: red;
+}

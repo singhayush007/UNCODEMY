@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+      }
+      .navbar {
+        display: flex;
+        background-color: black;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        width: 75px;
+      }
+
+      .navbar ul {
+        display: flex;
+      }
+
+      .navbar ul li {
+        padding: 0px 20px;
+      }
+      .navbar ul li a {
+        color: red;
+      }
+      .red {
+        color: white !important;
+      }
+      .navbar .container {
+        display: flex;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <div class="logo-img">
+          <a href="#"
+            ><img class="logo" src="/img/workplace.jpg" alt="logo"
+          /></a>
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a class="red" href="#">Contact</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div>
+      <div class="search">
+        <input type="search" placeholder="Search" />
+      </div>
+    </div>
+  </body>
+</html>

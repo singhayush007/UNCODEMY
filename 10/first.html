@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS PROPERTY</title>
+    <style>
+      .container {
+        border: 1px solid black;
+        padding: 20px;
+        width: 30%;
+      }
+
+      .row {
+        /* border: 1px solid red!important; */
+        width: 70%;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        border: 2px solid black;
+      }
+
+      .static {
+        background-color: green;
+        color: white;
+      }
+      .relative {
+        background-color: green;
+        color: white;
+        position: relative;
+        top: 30px;
+        left: 40px;
+        z-index: -99;
+      }
+      .opacity {
+        opacity: 0.5;
+      }
+
+      .absolute {
+        background-color: green;
+        color: white;
+        position: absolute;
+        left: 130px;
+        top: 840px;
+      }
+
+      .fixed {
+        background-color: green;
+        color: white;
+        position: fixed;
+        left: 380px;
+        top: 540px;
+      }
+
+      .stickytop {
+        background-color: green;
+        color: white;
+        position: sticky;
+        top: 0px;
+        z-index: 99;
+      }
+
+      .stickybottom {
+        position: sticky;
+        bottom: 0;
+        background-color: green;
+        color: white;
+        z-index: 99;
+      }
+
+      .row.sticky-row {
+        display: flex;
+        width: max-content;
+      }
+
+      .stickyleft {
+        position: sticky;
+        left: 50px;
+        background-color: green;
+        color: white;
+        z-index: -99;
+      }
+
+      .opacity {
+        opacity: 0.5;
+      }
+
+      .row.sticky-row {
+        display: flex;
+        width: max-content;
+      }
+
+      .stickyright {
+        position: sticky;
+        right: 0;
+        background-color: green;
+        color: white;
+        z-index: -99;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="box">box-1</div>
+        <div class="box static">static</div>
+        <div class="box">box-2</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="box">box-1</div>
+        <div class="box relative">relative</div>
+        <div class="box opacity">box-2</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="box">box-1</div>
+        <div class="box absolute">absolute</div>
+        <div class="box">box-2</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="box">box-1</div>
+        <div class="box fixed">fixed</div>
+        <div class="box">box-2</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="box">box-1</div>
+        <div class="box stickytop">stickytop</div>
+        <div class="box">box-2</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="box">box-1</div>
+        <div class="box stickybottom">stickybottom</div>
+        <div class="box">box-2</div>
+      </div>
+    </div>
+    <div class="container" style="overflow-x: auto">
+      <div class="row sticky-row">
+        <div class="box">box-1</div>
+        <div class="box stickyleft">stickyleft</div>
+        <div class="box">box-2</div>
+      </div>
+    </div>
+
+    <div class="container" style="overflow-x: auto">
+      <div class="row sticky-row">
+        <div class="box">box-1</div>
+        <div class="box stickyright">stickyright</div>
+        <div class="box">box-2</div>
+      </div>
+    </div>
+  </body>
+</html>

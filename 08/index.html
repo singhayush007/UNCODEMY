@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>List Hover</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #eee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      width: 300px;
+      background: white;
+      border-radius: 5px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .header {
+      background-color: #8e44ad;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 18px;
+    }
+
+    .list-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 15px;
+      border-bottom: 1px solid #eee;
+      transition: 0.3s ease-in-out;
+      background-color: white;
+    }
+
+    .list-item i {
+      color: #8e44ad;
+      font-size: 16px;
+    }
+
+    .list-item span {
+      flex: 1;
+      margin-left: 12px;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .list-item:hover {
+      background-color: #8e44ad;
+      color: white;
+      transform: translateX(-10px) scale(1.05);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      border-radius: 3px;
+    }
+
+    .list-item:hover i,
+    .list-item:hover span {
+      color: white;
+    }
+
+    .left-icon,
+    .right-icon {
+      min-width: 16px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">List hover</div>
+
+    <div class="list-item">
+      <div class="left-icon"><i class="far fa-circle"></i></div>
+      <span>List item hover effect</span>
+      <div class="right-icon"><i class="fas fa-trash-alt"></i></div>
+    </div>
+
+    <div class="list-item">
+      <div class="left-icon"><i class="far fa-circle"></i></div>
+      <span>List item hover effect</span>
+      <div class="right-icon"><i class="fas fa-trash-alt"></i></div>
+    </div>
+
+    <div class="list-item">
+      <div class="left-icon"><i class="far fa-circle"></i></div>
+      <span>List item hover effect</span>
+      <div class="right-icon"><i class="fas fa-trash-alt"></i></div>
+    </div>
+
+    <div class="list-item">
+      <div class="left-icon"><i class="fas fa-check-circle"></i></div>
+      <span>List item hover effect</span>
+      <div class="right-icon"><i class="fas fa-trash-alt"></i></div>
+    </div>
+
+    <div class="list-item">
+      <div class="left-icon"><i class="far fa-circle"></i></div>
+      <span>List item hover effect</span>
+      <div class="right-icon"><i class="fas fa-trash-alt"></i></div>
+    </div>
+
+    <div class="list-item">
+      <div class="left-icon"><i class="far fa-circle"></i></div>
+      <span>List item hover effect</span>
+      <div class="right-icon"><i class="fas fa-trash-alt"></i></div>
+    </div>
+  </div>
+
+</body>
+</html>

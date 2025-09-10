@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap Grid Layout</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+    .green-box { background-color: #28a745; min-height: 425px; }
+    .blue-box { background-color: #007bff; min-height: 205px; }
+    .red-box { background-color: #dc3545; min-height: 205px; }
+    .yellow-box { background-color: #ffc107; min-height: 205px; }
+    .purple-box { background-color: #6f42c1; min-height: 205px; }
+  </style>
+</head>
+<body>
+  <div class="container my-4">
+
+
+    <!-- First Row -->
+    <div class="row g-6">
+      <div class="col-md-6">
+        <div class="green-box box">600 x 400</div>
+      </div>
+      <div class="col-md-3">
+        <div class="blue-box box mb-3">300 x 205</div>
+        <div class="yellow-box box mb-3">300 x 205</div>
+      </div>
+      <div class="col-md-3">
+        <div class="red-box box mb-3">300 x 205</div>
+        <div class="purple-box box mb-3">300 x 205</div>
+      </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="row g-6 mt-1">
+      <div class="col-md-3">
+        <div class="blue-box box mb-3">300 x 205</div>
+        <div class="yellow-box box">300 x 205</div>
+      </div>
+      <div class="col-md-3">
+        <div class="red-box box mb-3">300 x 205</div>
+        <div class="purple-box box">300 x 205</div>
+      </div>
+      <div class="col-md-6">
+        <div class="green-box box">600 x 400</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
