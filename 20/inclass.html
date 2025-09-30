@@ -1,0 +1,129 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="carousel">
+        <img src="/js/img/images.jpeg" alt="image" id="imgCarousel">
+        <br>
+        <button onclick="prevImage()">Prev</button>
+        <button onclick="nxtImage()">Next</button>
+    </div>
+
+
+    <script>
+
+        const images = ["/js/img/images.jpeg", "/js/img/images1.jpeg", "/js/img/images2.jpeg"]
+        let currentIndex = 0;
+
+
+        function showImage(index){
+            const img = document.querySelector("#imgCarousel");
+            img.src = images[index];
+        }
+
+        function nxtImage() {
+            currentIndex++;
+            if(currentIndex >= images.length){
+                currentIndex = 0; // looping images
+            }
+            showImage(currentIndex);
+        }
+
+
+        function prevImage () {
+            currentIndex--;
+            if(currentIndex < 0){
+                currentIndex = images.length - 1;
+            }
+            showImage(currentIndex);
+        }
+
+        setInterval(() => {
+            nxtImage();
+        }, 3000); 
+
+        clearInterval();
+    </script>
+    
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="carousel">
+        <img src="/js/img/images.jpeg" alt="image" id="imgCarousel">
+        <br>
+        <button onclick="prevImage()">Prev</button>
+        <button onclick="nxtImage()">Next</button>
+    </div>
+
+
+    <script>
+
+        const images = ["/js/img/images.jpeg", "/js/img/images1.jpeg", "/js/img/images2.jpeg"]
+        let currentIndex = 0;
+        let interval;
+
+
+        function showImage(index) {
+            const img = document.querySelector("#imgCarousel");
+            img.src = images[index];
+        }
+
+        function nxtImage() {
+            currentIndex++;
+            if (currentIndex >= images.length) {
+                currentIndex = 0; // looping images
+            }
+            showImage(currentIndex);
+        }
+
+
+        function prevImage() {
+            currentIndex--;
+            if (currentIndex < 0) {
+                currentIndex = images.length - 1;
+            }
+            showImage(currentIndex);
+        }
+
+
+        function startAuto() {
+            interval = setInterval(nxtImage, 3000);
+        }
+
+        window.onload = function (){
+            showImage(currentIndex);
+            startAuto();
+        }
+
+
+        window.console.log("hello");
+
+
+        let obj = {
+            name : "snehank",
+            age : 30,
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>api</title>
+  </head>
+  <body>
+    <h2>Js api examples</h2>
+    <button id="btn">Click Me</button>
+    <p id="para"></p>
+
+    <script>
+      const URL = "https://api.thecatapi.com/v1/images/search";
+
+      const para = document.querySelector("#para");
+      const btn = document.querySelector("#btn");
+
+      const getFacts = async () => {
+        let respone = await fetch(URL);
+        console.log(respone);
+        let data = await respone.json();
+        console.log(data);
+        // console.log(data.data[6].attributes.description);
+
+        let imgurl = data[0].url;
+
+        let img = document.createElement("img");
+
+        img.src = imgurl;
+        img.alt = "random";
+        img.width = 500;
+
+        para.appendChild(img);
+      };
+
+      btn.addEventListener("click", getFacts);
+    </script>
+  </body>
+</html>

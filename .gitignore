@@ -1,0 +1,9 @@
+# MacOS system files
+.DS_Store
+
+# VSCode settings
+.vscode/
+
+# Node modules (agar kabhi install kiya ho)
+node_modules/
+

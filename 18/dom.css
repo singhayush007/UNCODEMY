@@ -1,0 +1,9 @@
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.heading {
+  transition: color 0.3s ease;
+}

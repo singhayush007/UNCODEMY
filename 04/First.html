@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        .name-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .name-container input {
+            flex: 1;
+        }
+
+        .gender-container {
+            margin: 10px 0;
+        }
+
+        .checkbox-group {
+            margin: 10px 0;
+        }
+
+        button {
+            width: 100%;
+            background-color: #f4b400;
+            border: none;
+            padding: 12px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #e09c00;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Responsive Registration Form</h2>
+        <form>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Re-type Password" required>
+
+            <div class="name-container">
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+            </div>
+
+            <div class="gender-container">
+                <label><input type="radio" name="gender" value="male">Male</label>
+                <label><input type="radio" name="gender" value="female">Female</lable>
+            </div>
+
+            <select required>
+                <option value="" disabled selected>Select a country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+            </select>
+
+            <div class="checkbox-group">
+                <label><input type="checkbox"> I agree to the terms and conditions</label>
+                <label><input type="checkbox"> I want to receive the newsletter </label>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+
+</html>

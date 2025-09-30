@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar Design</title>
+    <style>
+      body {
+        margin: 0;
+        /* By default margin will be 0  */
+        background-color: #d6eaf8;
+        font-family: "Segoe UI", sans-serif;
+      }
+      .navbar.first , .navbar.second , .navbar.third {
+        background-color: #1d1f20;
+        /* bakground color here is apply on all 3 navbar  */
+        padding: 15px 40px;
+        /* Padding is 15px from top bottom and 40px from left and right   */
+        display: flex;
+        /* Display is flex so that it is in proper row wise not in default dispaly  */
+        align-items: center; 
+        /* It will provide all items in center in row  */
+        justify-content: space-between;
+        /* Space between to content */
+        margin-bottom: 80px; 
+        /* Margin bottom is 40px so that all 3 navbar is shows properly due to margin */
+      }
+
+      .logo {
+        font-weight: bold;
+        /* Font weight is bold for logo  */
+        color: white;
+        /* Color is white for logo  */
+        font-size: 20px;
+        /* Font size is 20px for logo  */
+      }
+
+      .nav-links {
+        display: flex; 
+        /* Display is flex so that it is in proper row wise not in default dispaly  */
+        gap: 20px; 
+        /* Gap is 20px between all the links  */
+        align-items: center;
+        /* It will provide all items in center in row  */
+      }
+      .nav-links a{
+        text-decoration: none; 
+        /* Text decoration is none for all the links  */
+        color: white;
+        /* Color is white for all the links  */
+        font-size: 16px;
+        /* Font size is 16px for all the links  */
+      }
+      .contact-btn {
+        background-color: #0099cc;
+        /* Background color is #0099cc for contact button  */   
+        color: white;
+        /* Color is white for contact button  */
+        border: none;
+        /* Border is none for contact button  */
+        padding: 8px 18px;
+        /* Padding is 8px from top bottom and 18px from left and right for contact button  */
+        border-radius: 20px;
+        /* Border radius is 20px for contact button  */
+      }
+    </style>
+  </head>
+  <body>
+    <!---Navbar first-->
+    <div class="navbar first">
+      <div class="logo">LOGOBAKERY</div>
+      <div class="nav-links center nav">
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+        <a href="#">About</a>
+      </div>
+      <button class="contact-btn">Contact</button>
+    </div>
+    <!---Navbar second-->
+    <div class="navbar second">
+      <div class="nav-links">
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+        <a href="#">About</a>
+        <button class="contact-btn">Contact</button>
+      </div>
+      <div class="logo">LOGOBAKERY</div>
+    </div>
+
+    <!---Navbar third-->
+    <div class="navbar third">
+        <div class="logo">LOGOBAKERY</div>
+        <div class="nav-right">
+          <div class="nav-links">
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+            <a href="#">About</a>
+            <button class="contact-btn">Contact</button>
+          </div>
+      </div>
+    
+  </body>
+</html>

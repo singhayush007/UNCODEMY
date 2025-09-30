@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Forbes Leaderboard</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 10px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50vh;
+      width: 100%;
+    }
+
+    .leaderboard {
+      width: 320px;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); 
+    }
+
+    .leaderboard-header {
+      background: linear-gradient(135deg, #4f60ff, #5f72ff); 
+      color: white;
+      padding: 20px;
+      text-align: right;
+      position: relative;
+    }
+
+    .leaderboard-header img {
+      width: 40px;
+      position: absolute;
+      left: 40px;
+    }
+
+    .leaderboard-header h2 {
+      margin: 0;
+      font-size: 18px;
+      letter-spacing: 5px;
+    }
+
+    .leaderboard-header p {
+      margin: 5px 0 0;
+      font-size: 12px;
+      letter-spacing: 2px;
+      opacity: 0.6;
+    }
+
+    .entry {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 15px; 
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .user-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .user-info img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .user-info span {
+      font-weight: 500;
+      color: #333;
+      opacity: 0.5;
+    }
+
+    .value {
+      color: #21c197;
+      font-weight: bold;
+      font-size: 18px;
+      margin-left: 65px;
+    }
+
+    .worth {
+      color: #21c197;
+      font-weight: bold;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="leaderboard">
+    <div class="leaderboard-header">
+      <img src="https://cdn-icons-png.flaticon.com/128/2618/2618179.png" alt="Trophy" />
+      <h2>FORBES</h2>
+      <p>LEADERBOARD</p>
+    </div>
+
+    <div class="entry">
+      <div class="user-info">
+        <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="Mark Zuckerberg" />
+        <span>Mark Zuckerberg</span>
+      </div>
+      <div class="value">35.7</div>
+      <div class="worth">B</div>
+    </div>
+
+    <div class="entry">
+      <div class="user-info">
+        <img src="https://randomuser.me/api/portraits/men/20.jpg" alt="Dustin Moskovitz" />
+        <span>Dustin Moskovitz</span>
+      </div>
+      <div class="value">9.9</div>
+      <div class="worth">B</div>
+    </div>
+
+    <div class="entry">
+      <div class="user-info">
+        <img src="https://randomuser.me/api/portraits/women/30.jpg" alt="Elizabeth Holmes" />
+        <span>Elizabeth Holmes</span>
+      </div>
+      <div class="value">4.5</div>
+      <div class="worth">B</div>
+    </div>
+
+    <div class="entry">
+      <div class="user-info">
+        <img src="https://randomuser.me/api/portraits/men/40.jpg" alt="Evan Spiegel" />
+        <span>Evan Spiegel</span>
+      </div>
+      <div class="value">2.1</div>
+      <div class="worth">B</div>
+    </div>
+
+  </div>
+
+</body>
+</html>

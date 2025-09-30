@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+}
+
+.caraousel {
+    position: relative;
+    width: 600px;
+    height: 700px;
+    margin: auto;
+}
+
+
+.caraousel img {
+    width: 100%;
+    height: 90%;
+    object-fit: contain;
+    display: block;
+}
+
+.caraousel i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 4rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.caraousel i:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fa-arrow-left {
+    left: 100px;
+}
+
+
+.fa-arrow-right {
+    right: 100px;
+}
+
+
+.pagination {
+    text-align: center;
+    position: relative;
+    top: -50px;
+}
+
+
+.next, .prev {
+    padding: 10px 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.next:hover,
+.prev:hover {
+    background-color: #555;
+}
+
+.pagination {
+  text-align: center;
+  margin: 10px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+.dot:hover {
+  background-color: #555;
+}
